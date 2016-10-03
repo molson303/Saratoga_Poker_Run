@@ -1,0 +1,3 @@
+rootProject.name = 'poker_run_app'
+
+include ':app'
