@@ -48,8 +48,12 @@ renderButton(){
 
   render() {
     return (
-      <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
+    <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
+      
         <Card>
+          <Text style={styles.errorTextStyle}>
+            {this.state.error}
+          </Text>
           <CardSection style={styles.container}>
             <Input
               placeholder = "user@gmail.com"
@@ -68,16 +72,13 @@ renderButton(){
               onChangeText={password => this.setState({password})}
             />
           </CardSection>
-          <Text style={styles.errorTextStyle}>
-            {this.state.error}
-          </Text>
-
         </Card>
         <CardTwo>
           <CardSection>
             {this.renderButton()}
           </CardSection>
         </CardTwo>
+
       </Image>
     );
   }
@@ -87,7 +88,9 @@ const styles = {
   errorTextStyle: {
     fontSize:20,
     alignSelf: 'center',
-    color: 'red'
+    color: 'red',
+    fontWeight: "bold",
+    backgroundColor: "#E6DAC7"
   },
   background: {
     flex: 1,

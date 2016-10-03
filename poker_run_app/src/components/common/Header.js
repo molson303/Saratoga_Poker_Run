@@ -34,7 +34,7 @@ const styles = {
   },
   imgStyle: {
     height: 60,
-    width: 300
+    width: 310
   }
 
 };
