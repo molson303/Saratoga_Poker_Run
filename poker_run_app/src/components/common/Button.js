@@ -19,7 +19,7 @@ const { buttonStyle, textStyle } = styles;
 const styles = {
   textStyle: {
     alignSelf: 'center',
-    color: '#007aff',
+    color: '#8F622E',
     fontSize: 16,
     fontWeight: '600',
     paddingTop: 10,
@@ -28,12 +28,15 @@ const styles = {
   buttonStyle: {
     flex: 1,
     alignSelf: 'stretch',
-    backgroundColor: '#fff',
+    backgroundColor: '#F8F8F8',
     borderRadius: 5,
-    borderWidth: 1,
-    borderColor: '#007aff',
+    borderWidth: 2,
+    borderColor: '#8F622E',
     marginLeft: 5,
-    marginRight:5
+    marginRight:5,
+
+
   }
 };
 export { Button };
+// #F8F8F8

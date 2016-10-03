@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {Text, View, Image} from 'react-native';
 import firebase from 'firebase';
-import { Button, Card, CardSection, Input, Spinner } from './common';
+import { Button, Card, CardSection, Input, Spinner, CardTwo } from './common';
 
 
 
@@ -48,34 +48,37 @@ renderButton(){
 
   render() {
     return (
-    <Card>
-      <CardSection>
-        <Input
-          placeholder = "user@gmail.com"
-          label="Email"
-          value = {this.state.email}
-          onChangeText={email => this.setState({email})}
+      <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
+        <Card>
+          <CardSection style={styles.container}>
+            <Input
+              placeholder = "user@gmail.com"
+              label="Email"
+              value = {this.state.email}
+              onChangeText={email => this.setState({email})}
 
-          />
-      </CardSection>
-      <CardSection>
-        <Input
-          secureTextEntry
-          placeholder = "password"
-          label="Password"
-          value = {this.state.password}
-          onChangeText={password => this.setState({password})}
-        />
-      </CardSection>
+              />
+          </CardSection>
+          <CardSection>
+            <Input
+              secureTextEntry
+              placeholder = "password"
+              label="Password"
+              value = {this.state.password}
+              onChangeText={password => this.setState({password})}
+            />
+          </CardSection>
+          <Text style={styles.errorTextStyle}>
+            {this.state.error}
+          </Text>
 
-        <Text style={styles.errorTextStyle}>
-          {this.state.error}
-        </Text>
-
-      <CardSection>
-        {this.renderButton()}
-      </CardSection>
-    </Card>
+        </Card>
+        <CardTwo>
+          <CardSection>
+            {this.renderButton()}
+          </CardSection>
+        </CardTwo>
+      </Image>
     );
   }
 }
@@ -85,7 +88,13 @@ const styles = {
     fontSize:20,
     alignSelf: 'center',
     color: 'red'
+  },
+  background: {
+    flex: 1,
+    width: null,
+    height: 600
   }
+
 }
 
 export default LoginForm;

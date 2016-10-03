@@ -9,9 +9,7 @@ const Header = (props) =>{
   return (
     <View style={viewStyle}>
       <Image style={imgStyle}
-
         source={require('./img/saratoga_Logo1.png')}
-
         />
     </View>
   );
@@ -23,7 +21,7 @@ const styles = {
     backgroundColor: '#F8F8F8',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 90,
+    height: 85,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.2,

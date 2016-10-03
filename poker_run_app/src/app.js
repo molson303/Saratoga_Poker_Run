@@ -43,7 +43,7 @@ renderContent() {
   render() {
     return(
       <View>
-        <Header headerText="Saratoga Resort and Spa" />
+        <Header />
         {this.renderContent()}
       </View>
     );
