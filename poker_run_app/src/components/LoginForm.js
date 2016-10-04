@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, Image} from 'react-native';
 import firebase from 'firebase';
-import { Button, Card, CardSection, Input, Spinner, CardTwo } from './common';
+import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton } from './common';
 
 
 
@@ -49,7 +49,7 @@ renderButton(){
   render() {
     return (
     <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
-      
+
         <Card>
           <Text style={styles.errorTextStyle}>
             {this.state.error}
@@ -74,9 +74,9 @@ renderButton(){
           </CardSection>
         </Card>
         <CardTwo>
-          <CardSection>
+          <CardSectionButton>
             {this.renderButton()}
-          </CardSection>
+          </CardSectionButton>
         </CardTwo>
 
       </Image>
