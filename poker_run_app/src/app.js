@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {View, Image} from 'react-native';
+import {View, Image, Text} from 'react-native';
 import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
-
+import MainPage from './components/MainPage';
 
 class App extends Component {
    state = { loggedIn : null};
@@ -28,18 +28,16 @@ class App extends Component {
 renderContent() {
   switch (this.state.loggedIn){
     case true:
-      return (
-        <Button onPress={() => firebase.auth().signOut()}>
-          Log Out
-        </Button>
-
-      );
+      return <MainPage />;
     case false:
       return <LoginForm />;
     default:
       return <Spinner size='large' />;
   }
 }
+// <Button onPress={() => firebase.auth().signOut()}>
+//   Log Out
+// </Button>
   render() {
     return(
       <View>
