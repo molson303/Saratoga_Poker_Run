@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Image, Text, ScrollView} from 'react-native';
+import NavigationBar from 'react-native-navbar';
 import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
