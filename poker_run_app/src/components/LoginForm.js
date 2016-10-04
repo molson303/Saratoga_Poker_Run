@@ -17,14 +17,19 @@ class LoginForm extends Component {
     .then(this.onLoginSuccess.bind(this))
     .catch(() => {
       firebase.auth().createUserWithEmailAndPassword(email, password)
+
       .then(this.onLoginSuccess.bind(this))
       .catch(this.onLoginFail.bind(this));
     });
   }
 
+// onLoginFail(password <= 6){
+//   this.setState({ error: 'Password must be at least 6 characters', loading: false});
+//   }
 onLoginFail(){
-  this.setState({ error: 'Authentication Failed', loading: false});
-}
+  this.setState({ error: 'Authentication Failed - Password Must be at Least 6 Characters', loading: false});
+  }
+
 
 onLoginSuccess() {
   this.setState({
@@ -48,9 +53,10 @@ renderButton(){
 
   render() {
     return (
-    <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
 
-        <Card>
+
+    <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
+      <Card>
           <Text style={styles.errorTextStyle}>
             {this.state.error}
           </Text>
@@ -72,14 +78,16 @@ renderButton(){
               onChangeText={password => this.setState({password})}
             />
           </CardSection>
+
+
         </Card>
         <CardTwo>
           <CardSectionButton>
             {this.renderButton()}
           </CardSectionButton>
         </CardTwo>
-
       </Image>
+
     );
   }
 }
@@ -89,8 +97,7 @@ const styles = {
     fontSize:20,
     alignSelf: 'center',
     color: 'red',
-    fontWeight: "bold",
-    backgroundColor: "#E6DAC7"
+    backgroundColor: "#F8F8F8"
   },
   background: {
     flex: 1,

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Image, Text} from 'react-native';
+import {View, Image, Text, ScrollView} from 'react-native';
 import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
@@ -40,10 +40,10 @@ renderContent() {
 // </Button>
   render() {
     return(
-      <View>
+      <ScrollView>
         <Header />
         {this.renderContent()}
-      </View>
+      </ScrollView>
     );
   }
 }
