@@ -17,7 +17,6 @@ class LoginForm extends Component {
     .then(this.onLoginSuccess.bind(this))
     .catch(() => {
       firebase.auth().createUserWithEmailAndPassword(email, password)
-
       .then(this.onLoginSuccess.bind(this))
       .catch(this.onLoginFail.bind(this));
     });
@@ -50,12 +49,9 @@ renderButton(){
     </Button>
   );
 }
-
   render() {
     return (
-
-
-    <Image source={require('./common/img/hotSprings.jpg')} style={styles.background}>
+      <View style={styles.background}>
       <Card>
           <Text style={styles.errorTextStyle}>
             {this.state.error}
@@ -78,20 +74,18 @@ renderButton(){
               onChangeText={password => this.setState({password})}
             />
           </CardSection>
-
-
         </Card>
+        <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
         <CardTwo>
           <CardSectionButton>
             {this.renderButton()}
           </CardSectionButton>
         </CardTwo>
-      </Image>
-
+    </View>
     );
   }
 }
-
+// #113A79
 const styles = {
   errorTextStyle: {
     fontSize:20,
@@ -99,10 +93,13 @@ const styles = {
     color: 'red',
     backgroundColor: "#F8F8F8"
   },
-  background: {
+  mainImage: {
     flex: 1,
     width: null,
-    height: 600
+    height: 250
+  },
+  background:{
+    backgroundColor: "#113A79"
   }
 
 }

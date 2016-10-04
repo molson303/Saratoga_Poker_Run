@@ -9,7 +9,7 @@ const Header = (props) =>{
   return (
     <View style={viewStyle}>
       <Image style={imgStyle}
-        source={require('./img/saratoga_Logo1.png')}
+        source={require('./img/poker_run.png')}
         />
     </View>
   );
@@ -21,7 +21,7 @@ const styles = {
     backgroundColor: '#F8F8F8',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 85,
+    height: 130,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.2,
@@ -33,8 +33,9 @@ const styles = {
     fontSize: 30
   },
   imgStyle: {
-    height: 60,
-    width: 310
+    height: 130,
+    width: 450,
+    // position: "relative"
   }
 
 };

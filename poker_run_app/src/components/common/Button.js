@@ -19,7 +19,7 @@ const { buttonStyle, textStyle } = styles;
 const styles = {
   textStyle: {
     alignSelf: 'center',
-    color: '#8F622E',
+    color: '#216CDF',
     fontSize: 16,
     fontWeight: '600',
     paddingTop: 10,
