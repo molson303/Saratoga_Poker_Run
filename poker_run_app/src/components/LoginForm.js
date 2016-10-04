@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, Image} from 'react-native';
 import firebase from 'firebase';
-import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton } from './common';
+import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, CardSectionImage } from './common';
 
 
 
@@ -22,9 +22,7 @@ class LoginForm extends Component {
     });
   }
 
-// onLoginFail(password <= 6){
-//   this.setState({ error: 'Password must be at least 6 characters', loading: false});
-//   }
+
 onLoginFail(){
   this.setState({ error: 'Authentication Failed - Password Must be at Least 6 Characters', loading: false});
   }
@@ -75,7 +73,9 @@ renderButton(){
             />
           </CardSection>
         </Card>
-        <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
+        <CardSectionImage>
+          <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
+        </CardSectionImage>
         <CardTwo>
           <CardSectionButton>
             {this.renderButton()}
