@@ -20,7 +20,7 @@ const styles = {
     borderColor: 'black',
     borderWidth: 2,
     position: 'relative',
-    marginTop: 10,
+    marginTop: 20,
   }
 };
 

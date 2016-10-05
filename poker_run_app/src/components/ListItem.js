@@ -16,6 +16,7 @@ class ListItem extends Component {
         <CardSection>
           <Text style ={{flex: 1}}>
           {library.description}
+          {library.description1}
           </Text>
         </CardSection>
       );
