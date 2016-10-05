@@ -49,15 +49,16 @@ render() {
 
 const styles = {
   headerStyle: {
-    backgroundColor: "gold"
+    backgroundColor: "#F6E8CD"
   },
   titleStyle: {
     fontSize: 20,
     paddingLeft: 15,
+    color: "black",
   },
   bodyStyle: {
-    backgroundColor: "blue"
-  }
+    backgroundColor: "#F6E8CD",
+    }
 };
 
 const mapStateToProps = (state, ownProps) => {
