@@ -14,15 +14,13 @@ const styles = {
     borderBottomWidth: 1,
     padding: 5,
     borderRadius: 7,
-    backgroundColor: '#F8F8F8',
+    backgroundColor: '#216FE8',
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    borderColor: '#113977',
+    borderColor: '#F6E8CD',
     borderWidth: 2,
     position: 'relative',
     marginTop: 10,
-    marginLeft: 5,
-    marginRight: 5,
 
   }
 };

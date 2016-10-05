@@ -29,6 +29,7 @@ const styles = {
     flex: 1,
     alignSelf: 'stretch',
     backgroundColor: '#F8F8F8',
+    borderRadius: 5,
     marginLeft: 2,
     marginRight:2,
   }

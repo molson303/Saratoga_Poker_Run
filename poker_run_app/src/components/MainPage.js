@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import firebase from 'firebase';
 import { Button, ProfileCard, CardTwo, CardSectionLogOutButton } from './common';
@@ -12,7 +12,12 @@ import { Provider } from 'react-redux';
 
 const rightButtonConfig = {
   title: 'Next',
-  handler: () => alert('hello!'),
+  handler: () => (
+    render(
+
+    )
+
+  )
 };
 const leftButtonConfig = {
   title:'Back',
@@ -40,11 +45,12 @@ class MainPage extends Component {
           </Provider>
         </View>
 
-        <CardSectionLogOutButton>
-          <Button onPress={() => firebase.auth().signOut()}>
-            Log Out
-          </Button>
+          <CardSectionLogOutButton>
+            <Button onPress={() => firebase.auth().signOut()}>
+              Log Out
+            </Button>
         </CardSectionLogOutButton>
+
       </View>
     );
   }
@@ -68,8 +74,8 @@ const styles = {
     marginTop: 70,
   },
   container: {
-    backgroundColor: "#E6DAC7",
-    paddingBottom: 10,
+    backgroundColor: "#F6E8CD",
+    paddingBottom: 20,
   }
 
 

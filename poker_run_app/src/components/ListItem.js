@@ -10,7 +10,8 @@ class ListItem extends Component {
   }
 
   renderDescription() {
-    const { library, expanded } = this.props;
+
+    const { library, expanded} = this.props;
     if (expanded){
       return(
         <CardSection>
@@ -22,6 +23,7 @@ class ListItem extends Component {
       );
     }
   }
+
 
 render() {
     const { titleStyle, bodyStyle, headerStyle } = styles;
@@ -48,8 +50,11 @@ render() {
 }
 
 const styles = {
+  header: {
+    color: "black"
+  },
   headerStyle: {
-    backgroundColor: "#F6E8CD"
+    // backgroundColor: "#F6E8CD",
   },
   titleStyle: {
     fontSize: 20,
@@ -58,6 +63,7 @@ const styles = {
   },
   bodyStyle: {
     backgroundColor: "#F6E8CD",
+    paddingBottom: 10,
     }
 };
 
