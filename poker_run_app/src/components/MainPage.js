@@ -28,7 +28,7 @@ class MainPage extends Component {
   state = {};
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <NavigationBar
           title={titleConfig}
           rightButton={rightButtonConfig}
@@ -39,7 +39,7 @@ class MainPage extends Component {
             <LibraryList />
           </Provider>
         </View>
-        
+
         <CardSectionLogOutButton>
           <Button onPress={() => firebase.auth().signOut()}>
             Log Out
@@ -67,6 +67,10 @@ const styles = {
   cardStyle: {
     marginTop: 70,
   },
+  container: {
+    backgroundColor: "#E6DAC7",
+    paddingBottom: 10,
+  }
 
 
 }

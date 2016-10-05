@@ -17,12 +17,13 @@ const styles = {
     backgroundColor: '#F8F8F8',
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    borderColor: 'gold',
+    borderColor: '#113977',
     borderWidth: 2,
     position: 'relative',
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
+
   }
 };
 
