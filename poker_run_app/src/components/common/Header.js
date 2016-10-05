@@ -18,7 +18,7 @@ const Header = (props) =>{
 
 const styles = {
   viewStyle: {
-    backgroundColor: '#F8F8F8',
+    backgroundColor: '#7CB3E8',
     alignItems: 'center',
     justifyContent: 'center',
     height: 130,

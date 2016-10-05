@@ -96,12 +96,13 @@ const styles = {
     backgroundColor: "#F8F8F8"
   },
   mainImage: {
+    marginTop: 10,
     flex: 1,
     width: null,
     height: 250
   },
   background:{
-    backgroundColor: "#113A79"
+    backgroundColor: "#7CB3E8"
   },
 }
 
