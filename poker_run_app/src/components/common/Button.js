@@ -31,8 +31,6 @@ const styles = {
     backgroundColor: '#F8F8F8',
     marginLeft: 2,
     marginRight:2,
-
-
   }
 };
 export { Button };

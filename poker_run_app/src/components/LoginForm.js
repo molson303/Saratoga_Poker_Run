@@ -9,7 +9,7 @@ class LoginForm extends Component {
   state = {email: '', password: '', error: '', loading: false };
 
   onButtonPress(){
-    const { email, password } = this.state;
+    const {email, password } = this.state;
 
     this.setState({error: '', loading: true});
 
@@ -30,6 +30,7 @@ onLoginFail(){
 
 onLoginSuccess() {
   this.setState({
+
     email: '',
     password: '',
     loading: false,
@@ -54,7 +55,7 @@ renderButton(){
           <Text style={styles.errorTextStyle}>
             {this.state.error}
           </Text>
-          <CardSection style={styles.container}>
+          <CardSection>
             <Input
               placeholder = "user@gmail.com"
               label="Email"

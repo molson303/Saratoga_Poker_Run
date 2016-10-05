@@ -5,5 +5,7 @@ export * from './Header';
 export * from './Input';
 export * from './Spinner';
 export * from './CardTwo';
-export * from './CardSectionButton'
-export * from './CardSectionImage'
+export * from './CardSectionButton';
+export * from './CardSectionImage';
+export * from './ProfileCard';
+export * from './CardSectionLogOutButton';
