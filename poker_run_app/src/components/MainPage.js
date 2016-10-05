@@ -39,6 +39,7 @@ class MainPage extends Component {
             <LibraryList />
           </Provider>
         </View>
+        
         <CardSectionLogOutButton>
           <Button onPress={() => firebase.auth().signOut()}>
             Log Out

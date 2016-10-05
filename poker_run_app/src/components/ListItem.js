@@ -24,7 +24,7 @@ class ListItem extends Component {
   }
 
 render() {
-    const { titleStyle } = styles;
+    const { titleStyle, bodyStyle, headerStyle } = styles;
     const {id, title } = this.props.library;
 
 
@@ -32,13 +32,15 @@ render() {
       <TouchableWithoutFeedback
         onPress={() => this.props.selectLibrary(id)}
       >
-        <View>
+        <View style={headerStyle}>
           <CardSection>
             <Text style={titleStyle}>
               {title}
             </Text>
           </CardSection>
-          {this.renderDescription()}
+          <View style={bodyStyle}>
+            {this.renderDescription()}
+          </View>
         </View>
       </TouchableWithoutFeedback>
     );
@@ -46,9 +48,15 @@ render() {
 }
 
 const styles = {
+  headerStyle: {
+    backgroundColor: "gold"
+  },
   titleStyle: {
-    fontSize: 18,
-    paddingLeft: 15
+    fontSize: 20,
+    paddingLeft: 15,
+  },
+  bodyStyle: {
+    backgroundColor: "blue"
   }
 };
 

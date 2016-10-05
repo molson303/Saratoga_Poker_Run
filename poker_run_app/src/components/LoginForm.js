@@ -51,32 +51,33 @@ renderButton(){
   render() {
     return (
       <View style={styles.background}>
-      <Card>
-          <Text style={styles.errorTextStyle}>
-            {this.state.error}
-          </Text>
-          <CardSection>
-            <Input
-              placeholder = "user@gmail.com"
-              label="Email"
-              value = {this.state.email}
-              onChangeText={email => this.setState({email})}
-
-              />
-          </CardSection>
-          <CardSection>
-            <Input
-              secureTextEntry
-              placeholder = "password"
-              label="Password"
-              value = {this.state.password}
-              onChangeText={password => this.setState({password})}
-            />
-          </CardSection>
-        </Card>
-        <CardSectionImage>
+      <CardSectionImage>
           <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
         </CardSectionImage>
+        <Card>
+            <Text style={styles.errorTextStyle}>
+              {this.state.error}
+            </Text>
+            <CardSection>
+              <Input
+                style={styles.inputStyle}
+                placeholder = "user@gmail.com"
+                label="Email"
+                value = {this.state.email}
+                onChangeText={email => this.setState({email})}
+
+                />
+            </CardSection>
+            <CardSection>
+              <Input
+                secureTextEntry
+                placeholder = "password"
+                label="Password"
+                value = {this.state.password}
+                onChangeText={password => this.setState({password})}
+              />
+            </CardSection>
+          </Card>
         <CardTwo>
           <CardSectionButton>
             {this.renderButton()}
@@ -101,8 +102,7 @@ const styles = {
   },
   background:{
     backgroundColor: "#113A79"
-  }
-
+  },
 }
 
 export default LoginForm;
