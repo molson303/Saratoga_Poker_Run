@@ -34,7 +34,7 @@ render() {
       <TouchableWithoutFeedback
         onPress={() => this.props.selectLibrary(id)}
       >
-        <View style={headerStyle}>
+        <View>
           <CardSection>
             <Text style={titleStyle}>
               {title}
@@ -53,16 +53,14 @@ const styles = {
   header: {
     color: "black"
   },
-  headerStyle: {
-    // backgroundColor: "#F6E8CD",
-  },
+
   titleStyle: {
     fontSize: 20,
     paddingLeft: 15,
     color: "black",
   },
   bodyStyle: {
-    backgroundColor: "#F6E8CD",
+    backgroundColor: "#7CB3E8",
     paddingBottom: 10,
     }
 };

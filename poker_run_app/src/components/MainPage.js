@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Image } from 'react-native';
+import {Text, View, Image} from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import firebase from 'firebase';
 import { Button, ProfileCard, CardTwo, CardSectionLogOutButton } from './common';
@@ -8,37 +8,16 @@ import LibraryList from './LibraryList';
 import reducers from '../reducers';
 import  { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import LoginForm from './LoginForm';
 
 
-const rightButtonConfig = {
-  title: 'Next',
-  handler: () => (
-    render(
 
-    )
-
-  )
-};
-const leftButtonConfig = {
-  title:'Back',
-  handler: () => alert('Back')
-}
-
-const titleConfig = {
-  title: 'Event Info',
-};
 
 class MainPage extends Component {
-
-  state = {};
+state = {};
   render() {
     return (
       <View style={styles.container}>
-        <NavigationBar
-          title={titleConfig}
-          rightButton={rightButtonConfig}
-          leftButton={leftButtonConfig}
-          />
         <View style={{ flex: 1}}>
           <Provider store={createStore(reducers)}>
             <LibraryList />
@@ -65,7 +44,7 @@ const styles = {
     backgroundColor: "#E6DAC7"
   },
   background: {
-    backgroundColor: "#2273EB",
+    backgroundColor: "#7CB3E8",
     flex: 1,
     width: null,
     height: 490
@@ -74,7 +53,7 @@ const styles = {
     marginTop: 70,
   },
   container: {
-    backgroundColor: "#F6E8CD",
+    backgroundColor: "#7CB3E8",
     paddingBottom: 20,
   }
 

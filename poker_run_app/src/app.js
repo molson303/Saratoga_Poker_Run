@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
-import {View, Image, Text, ScrollView} from 'react-native';
+
+import {View, Image, Text, ScrollView, Navigator} from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
 import MainPage from './components/MainPage';
+
+function renderScene(route, navigator){
+  return <route.component route={route} navigator={navigator} />
+}
 
 class App extends Component {
    state = { loggedIn : null};
