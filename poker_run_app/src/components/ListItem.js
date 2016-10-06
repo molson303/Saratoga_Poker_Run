@@ -15,15 +15,31 @@ class ListItem extends Component {
     if (expanded){
       return(
         <CardSection>
-          <Text style ={{flex: 1}}>
-          {library.description}
-          {library.description1}
-          </Text>
+          <View style = {styles.container}>
+            <View style = {styles.item}>
+              <Text>{library.description}</Text>
+            </View>
+            <View style = {styles.item}>
+              <Text>{library.description1}</Text>
+            </View>
+            <View style = {styles.item}>
+              <Text>{library.description2}</Text>
+            </View>
+            <View style = {styles.item}>
+              <Text>{library.description3}</Text>
+            </View>
+            <View style = {styles.item}>
+              <Text>{library.description4}</Text>
+            </View>
+
+
+
+
+          </View>
         </CardSection>
       );
     }
   }
-
 
 render() {
     const { titleStyle, bodyStyle, headerStyle } = styles;
@@ -62,7 +78,16 @@ const styles = {
   bodyStyle: {
     backgroundColor: "#7CB3E8",
     paddingBottom: 10,
-    }
+  },
+  container: {
+    flex: 1,
+    paddingBottom:50,
+  },
+  item: {
+    flex: 1,
+    marginTop: 5,
+  }
+
 };
 
 const mapStateToProps = (state, ownProps) => {

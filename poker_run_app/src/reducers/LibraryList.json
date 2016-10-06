@@ -2,20 +2,29 @@
    {
       "id":0,
       "title":"Join Us! February 11, 2017",
-      "description":"Welcome to the 8th Annual Snowy Range Snowmobile Poker Run sponsored by the Saratoga Hot Springs Resort! Proceeds from the event will benefit the Upper Platte Valley Search and Rescue. Snowmobile route runs from Ryan Park, WY across the Snowy Range and back with the final stop at the Saratoga Hot Springs Resort!",
-      "description1": "Upon arriving at the resort, there will be music, food and great prizes! Grand Prize Winner will receive a cash prize!!! Additional prizes will also be awarded for 1st, 2nd and 3rd place. Be sure to stop by the Snowy Mountain Brewery, located within the resort, for a cold brew!"
-
+      "description":"Welcome to the 8th Annual Snowy Range Snowmobile Poker Run sponsored by the Saratoga Hot Springs Resort!",
+      "description1":" Proceeds from the event will benefit the Upper Platte Valley Search and Rescue.",
+      "description2": "Snowmobile route runs from Ryan Park, WY across the Snowy Range and back with the final stop at the Saratoga Hot Springs Resort!",
+      "description3": "Upon arriving at the resort, there will be music, food and great prizes! Grand Prize Winner will receive a cash prize!!!",
+      "description4": "Additional prizes will also be awarded for 1st, 2nd and 3rd place. Be sure to stop by the Snowy Mountain Brewery, located within the resort, for a cold brew!",
    },
    {
       "id":1,
       "title":"Sponsorship Packages",
-      "description":"Gold — Featured with a banner (provided by sponsor) displayed on route, a large logo on Punch Cards and promotional materials and 2 Punch Cards. Silver — Featured with a small logo on Punch Cards and promotional materials and 1 Punch Card.",
-      "description1": "In addition to your sponsorship package, each sponsor receives the following:  2 complimentary craft beers, A complimentary Sponsor meal for 2, Poker Run t-shirt"
+      "description":"Gold",
+      "description1": "— Featured with a banner (provided by sponsor) displayed on route, a large logo on Punch Cards and promotional materials and 2 Punch Cards. ",
+      "description2": "Silver",
+      "description3": "— Featured with a small logo on Punch Cards and promotional materials and 1 Punch Card.",
+      "description4": "In addition to your sponsorship package, each sponsor receives the following: 2 complimentary craft beers, A complimentary Sponsor meal for 2, Poker Run t-shirt",
    },
    {
       "id":2,
       "title":"Poker Run Route",
-      "description":"1st Stop: Rendezvous Lodge, 14 miles down Hwy 130 (Snowy Range Rd) N 41.322° , W 106.504° - 2nd Stop: Nelson Park Safety Hut N 41.17940°, W 106.17460° - 3rd Stop: Lake Marie via snowmobile trail U N 41.331°, W 106.325° - 4th Stop: Quealy Safety Hut N 41.22740°, W 106.20700° - 5th Stop: Saratoga Hot Springs Resort, 601 E Pic Pike Rd, Saratoga N 41.453°, W 106.802°"
+      "description":"1st Stop: Rendezvous Lodge, 14 miles down Hwy 130 (Snowy Range Rd) N 41.322° , W 106.504°",
+      "description1":"2nd Stop: Nelson Park Safety Hut N 41.17940°, W 106.17460°",
+      "description2":"3rd Stop: Lake Marie via snowmobile trail U N 41.331°, W 106.325°",
+      "description3":"4th Stop: Quealy Safety Hut N 41.22740°, W 106.20700°",
+      "description4":"5th Stop: Saratoga Hot Springs Resort, 601 E Pic Pike Rd, Saratoga N 41.453°, W 106.802°"
    },
    {
       "id":3,
@@ -37,5 +46,5 @@
       "title":"Phone numbers",
       "description":"1-800-594-0178 or 307-326-5261"
    }
-  
+
 ]
