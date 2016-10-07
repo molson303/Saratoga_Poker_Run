@@ -8,6 +8,7 @@ import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, 
 class LoginForm extends Component {
   state = {email: '', password: '', error: '', loading: false };
 
+  
   onButtonPress(){
     const {email, password } = this.state;
 
@@ -22,7 +23,13 @@ class LoginForm extends Component {
     });
   }
 
-
+  componentDidMount() {
+    var url = IntentAndroid.getInitialURL(url => {
+      if (url) {
+        console.log('Initial url is: ' + 'https://mikesApp.com');
+      }
+    });
+  }
 onLoginFail(){
   this.setState({ error: 'Authentication Failed - Password Must be at Least 6 Characters', loading: false});
   }
@@ -44,10 +51,12 @@ renderButton(){
   }
   return (
     <Button onPress={this.onButtonPress.bind(this)}>
-      Log In
+      Log Indddd
     </Button>
   );
 }
+
+
   render() {
     return (
       <View style={styles.background}>
@@ -102,7 +111,8 @@ const styles = {
     height: 250
   },
   background:{
-    backgroundColor: "#7CB3E8"
+    backgroundColor: "#7CB3E8",
+    paddingBottom: 21,
   },
 }
 

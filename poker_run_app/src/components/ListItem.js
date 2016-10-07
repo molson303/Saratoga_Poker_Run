@@ -31,10 +31,6 @@ class ListItem extends Component {
             <View style = {styles.item}>
               <Text>{library.description4}</Text>
             </View>
-
-
-
-
           </View>
         </CardSection>
       );

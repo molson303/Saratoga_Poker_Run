@@ -21,7 +21,7 @@ const styles = {
     backgroundColor: '#7CB3E8',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 130,
+    height: 180,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.2,
@@ -33,9 +33,8 @@ const styles = {
     fontSize: 30
   },
   imgStyle: {
-    height: 130,
+    height: 160,
     width: 450,
-    // position: "relative"
   }
 
 };

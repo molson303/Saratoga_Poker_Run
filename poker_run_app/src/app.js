@@ -6,11 +6,8 @@ import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
 import MainPage from './components/MainPage';
-
-function renderScene(route, navigator){
-  return <route.component route={route} navigator={navigator} />
-}
-
+import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
+import Events from './components/Events'
 class App extends Component {
    state = { loggedIn : null};
 
@@ -41,16 +38,23 @@ renderContent() {
       return <Spinner size='large' />;
   }
 }
-// <Button onPress={() => firebase.auth().signOut()}>
-//   Log Out
-// </Button>
+
   render() {
     return(
       <ScrollView>
         <Header />
         {this.renderContent()}
       </ScrollView>
+
     );
   }
 }
+
+
+const styles = {
+  tab_text: {
+    fontSize: 8,
+  },
+}
+
 export default App;
