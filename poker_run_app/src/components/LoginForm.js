@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View, Image, ScrollView} from 'react-native';
 import firebase from 'firebase';
-import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, CardSectionImage } from './common';
+import { Button, Header, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, CardSectionImage } from './common';
 
 
 
@@ -47,11 +47,10 @@ renderButton(){
     </Button>
   );
 }
-
-
   render() {
     return (
       <ScrollView style={styles.background}>
+        <Header />
       <CardSectionImage>
           <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
         </CardSectionImage>
@@ -100,11 +99,10 @@ const styles = {
     marginTop: 10,
     flex: 1,
     width: null,
-    height: 250
+    height: 230
   },
   background:{
     backgroundColor: "#7CB3E8",
-    paddingBottom: 21,
   },
 }
 

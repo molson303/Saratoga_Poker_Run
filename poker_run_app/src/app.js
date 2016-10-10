@@ -4,9 +4,8 @@ import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
 import MainPage from './components/MainPage';
-import Events from "./components/Events"
+import CheckPoints from "./components/CheckPoints"
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
-import EventDetail from './components/Event_Detail';
 import Logout from './components/Logout';
 import NavBar from './components/Navbar';
 
@@ -44,7 +43,6 @@ renderContent() {
 render() {
     return(
       this.renderContent()
-
     );
   }
 }

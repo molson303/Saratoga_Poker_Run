@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
-import { Button, ProfileCard, CardTwo, CardSectionLogOutButton } from './common';
+import { Button, ProfileCard, CardTwo, CardSectionLogOutButton, Header } from './common';
 import firebase from 'firebase';
 
-class Events extends Component{
+class CheckPoints extends Component{
   render (){
     return (
         <View style={styles.container}>
-          <Text>These are the events</Text>
+          <Header />
+          <Text>Insert Content Here</Text>
         </View>
     );
   }
@@ -22,4 +23,4 @@ const styles = {
 
 
 
-export default Events;
+export default CheckPoints;

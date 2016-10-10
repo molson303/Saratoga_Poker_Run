@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image,ScrollView} from 'react-native';
 import firebase from 'firebase';
-import { Button, ProfileCard, CardTwo, CardSectionLogOutButton } from './common';
+import { Button, ProfileCard, CardTwo, CardSectionLogOutButton, Header } from './common';
 //redux
 import LibraryList from './LibraryList';
 import reducers from '../reducers';
@@ -9,20 +9,20 @@ import  { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import LoginForm from './LoginForm';
-import Events from './Events'
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
 
 class MainPage extends Component {
 state = {};
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
+        <Header />
         <View style={{ flex: 1}}>
           <Provider store={createStore(reducers)}>
             <LibraryList />
           </Provider>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

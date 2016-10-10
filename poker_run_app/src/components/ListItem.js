@@ -10,7 +10,6 @@ class ListItem extends Component {
   }
 
   renderDescription() {
-
     const { library, expanded} = this.props;
     if (expanded){
       return(
