@@ -17,7 +17,6 @@ const styles = {
     flexDirection: 'row',
     borderColor: '#F8F8F8',
     borderWidth: 2,
-
     position: 'relative',
     marginTop:5
 
