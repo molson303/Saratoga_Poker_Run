@@ -13,7 +13,7 @@ class NavBar extends Component {
     return (
       <ScrollableTabView style={{marginTop: 20}} renderTabBar={() => <DefaultTabBar />} >
         <LoginForm tabLabel="Login" />
-        <MainPage tabLabel="Event Detailxs" />
+        <MainPage tabLabel="Event Details" />
         <Events tabLabel="Events" />
         <Logout tabLabel="Logout" />
       </ScrollableTabView>

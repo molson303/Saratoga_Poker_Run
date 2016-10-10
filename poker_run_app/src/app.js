@@ -43,7 +43,6 @@ renderContent() {
 
 render() {
     return(
-
       this.renderContent()
 
     );

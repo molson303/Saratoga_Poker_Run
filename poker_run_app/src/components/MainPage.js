@@ -22,11 +22,6 @@ state = {};
             <LibraryList />
           </Provider>
         </View>
-        <CardSectionLogOutButton>
-          <Button onPress={() => firebase.auth().signOut()}>
-            Log Out
-          </Button>
-        </CardSectionLogOutButton>
       </View>
     );
   }
@@ -50,7 +45,7 @@ const styles = {
   },
   container: {
     backgroundColor: "#7CB3E8",
-    paddingBottom: 50,
+    paddingBottom: 140,
   },
 
 }
