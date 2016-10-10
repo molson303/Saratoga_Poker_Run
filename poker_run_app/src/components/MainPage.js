@@ -7,6 +7,7 @@ import LibraryList from './LibraryList';
 import reducers from '../reducers';
 import  { createStore } from 'redux';
 import { Provider } from 'react-redux';
+
 import LoginForm from './LoginForm';
 import Events from './Events'
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
@@ -27,7 +28,6 @@ state = {};
           </Button>
         </CardSectionLogOutButton>
       </View>
-
     );
   }
 }
@@ -52,7 +52,7 @@ const styles = {
     backgroundColor: "#7CB3E8",
     paddingBottom: 50,
   },
-  
+
 }
 
 export default MainPage;

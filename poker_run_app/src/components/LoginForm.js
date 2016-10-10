@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, ScrollView} from 'react-native';
 import firebase from 'firebase';
 import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, CardSectionImage } from './common';
 
@@ -8,7 +8,7 @@ import { Button, Card, CardSection, Input, Spinner, CardTwo, CardSectionButton, 
 class LoginForm extends Component {
   state = {email: '', password: '', error: '', loading: false };
 
-  
+
   onButtonPress(){
     const {email, password } = this.state;
 
@@ -23,13 +23,6 @@ class LoginForm extends Component {
     });
   }
 
-  componentDidMount() {
-    var url = IntentAndroid.getInitialURL(url => {
-      if (url) {
-        console.log('Initial url is: ' + 'https://mikesApp.com');
-      }
-    });
-  }
 onLoginFail(){
   this.setState({ error: 'Authentication Failed - Password Must be at Least 6 Characters', loading: false});
   }
@@ -37,7 +30,6 @@ onLoginFail(){
 
 onLoginSuccess() {
   this.setState({
-
     email: '',
     password: '',
     loading: false,
@@ -51,7 +43,7 @@ renderButton(){
   }
   return (
     <Button onPress={this.onButtonPress.bind(this)}>
-      Log Indddd
+      Log In
     </Button>
   );
 }
@@ -59,7 +51,7 @@ renderButton(){
 
   render() {
     return (
-      <View style={styles.background}>
+      <ScrollView style={styles.background}>
       <CardSectionImage>
           <Image source={require('./common/img/janssen_sled.jpg')} style={styles.mainImage}></Image>
         </CardSectionImage>
@@ -92,7 +84,7 @@ renderButton(){
             {this.renderButton()}
           </CardSectionButton>
         </CardTwo>
-    </View>
+    </ScrollView>
     );
   }
 }

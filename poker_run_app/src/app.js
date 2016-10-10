@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
-
-import {View, Image, Text, ScrollView, Navigator} from 'react-native';
-import NavigationBar from 'react-native-navbar';
+import {View, Image, Text, ScrollView} from 'react-native';
 import firebase from 'firebase';
 import {Header, Button, Spinner} from './components/common';
 import LoginForm from './components/LoginForm';
 import MainPage from './components/MainPage';
+import Events from "./components/Events"
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
-import Events from './components/Events'
+import EventDetail from './components/Event_Detail';
+import Logout from './components/Logout';
+import NavBar from './components/Navbar';
+
 class App extends Component {
    state = { loggedIn : null};
 
@@ -31,7 +33,7 @@ class App extends Component {
 renderContent() {
   switch (this.state.loggedIn){
     case true:
-      return <MainPage />;
+      return <NavBar /> ;
     case false:
       return <LoginForm />;
     default:
@@ -39,12 +41,10 @@ renderContent() {
   }
 }
 
-  render() {
+render() {
     return(
-      <ScrollView>
-        <Header />
-        {this.renderContent()}
-      </ScrollView>
+
+      this.renderContent()
 
     );
   }
@@ -55,6 +55,10 @@ const styles = {
   tab_text: {
     fontSize: 8,
   },
+  size:{
+    height: 300,
+    width: null,
+  }
 }
 
 export default App;

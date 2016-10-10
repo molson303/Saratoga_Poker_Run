@@ -1,25 +1,24 @@
 import React, {Component} from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
-import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
-
-
-
-
+import {View, Text} from 'react-native';
+import { Button, ProfileCard, CardTwo, CardSectionLogOutButton } from './common';
+import firebase from 'firebase';
 
 class Events extends Component{
   render (){
     return (
-      <View>
-      <TouchableOpacity>
-      <Text>
-        Click ME
-      </Text>
-    </TouchableOpacity>
-  </View>
-  )
+        <View style={styles.container}>
+          <Text>These are the events</Text>
+        </View>
+    );
   }
 }
 
+const styles = {
+  container: {
+    backgroundColor: "#7CB3E8",
+    paddingBottom: 50,
+  },
+}
 
 
 
