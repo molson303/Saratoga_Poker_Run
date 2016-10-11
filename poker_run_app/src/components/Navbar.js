@@ -10,7 +10,7 @@ import MainPage from './MainPage'
 class NavBar extends Component {
   render() {
     return (
-      <ScrollableTabView style={{marginTop: 20}} renderTabBar={() => <DefaultTabBar />} >
+      <ScrollableTabView style={styles.NavBar} renderTabBar={() => <DefaultTabBar />} >
         <MainPage tabLabel="Event Details" />
         <CheckPoints tabLabel="Check Points" />
         <Logout tabLabel="Logout" />
@@ -19,4 +19,14 @@ class NavBar extends Component {
     );
   }
 }
+
+const styles = {
+  NavBar: {
+    marginTop: 0,
+    backgroundColor: "tan",
+  }
+
+}
+
+
 export default NavBar;
