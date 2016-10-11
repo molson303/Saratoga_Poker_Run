@@ -14,9 +14,7 @@ import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view
 class MainPage extends Component {
 state = {};
 
-
-
-  render() {
+render() {
     return (
       <ScrollView style={styles.container}>
         <Header />

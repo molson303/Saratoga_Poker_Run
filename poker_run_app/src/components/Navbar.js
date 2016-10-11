@@ -23,7 +23,7 @@ class NavBar extends Component {
 const styles = {
   NavBar: {
     marginTop: 0,
-    backgroundColor: "tan",
+    backgroundColor: "#E6DAC7",
   }
 
 }
