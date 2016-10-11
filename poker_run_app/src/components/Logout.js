@@ -9,8 +9,10 @@ class Logout extends Component{
   render (){
     return (
     <ScrollView style={styles.container}>
+      <CardSection>
         <Text style={styles.text}>We Hope To See You Again!</Text>
-      <CardSectionImage>
+      </CardSection>
+    <CardSectionImage>
         <Image source={require('./common/img/pool.jpg')} style={styles.mainImage}></Image>
       </CardSectionImage>
       <CardSectionLogOutButton>
@@ -27,20 +29,17 @@ const styles = {
   container: {
     backgroundColor: "#7CB3E8",
     paddingBottom: 500,
-    // justifyContent: 'center',
-    // alignItems: 'center',
     },
     mainImage: {
-      marginTop: 5,
+      marginTop: 10,
       flex: 1,
       width: null,
-      height: 350,
+      height: 400,
     },
     text: {
-      fontSize: 50,
+      fontSize: 25,
       color: "black",
       marginLeft: 10,
-
 
     }
   }

@@ -5,7 +5,7 @@ import firebase from 'firebase';
 
 class CheckPoints extends Component{
 
-//I LAST ADDED THIS TO THE CODE AND IT DOESNT WORK WTF
+// LAST ADDED THIS TO THE CODE AND IT DOESNT WORK WTF
 componentDidMount() {
   var url = Linking.getInitialURL().then((url) => {
     if (url) {
@@ -29,7 +29,7 @@ componentDidMount() {
 const styles = {
   container: {
     backgroundColor: "#7CB3E8",
-    paddingBottom: 50,
+    paddingBottom: 400,
   },
 }
 

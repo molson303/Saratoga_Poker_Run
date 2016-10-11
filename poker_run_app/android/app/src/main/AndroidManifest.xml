@@ -29,18 +29,6 @@
 
 
 
-    <activity
-    android:name="com.poker_run_app"
-    android:label="@string/title_poker" >
-    <intent-filter android:label="@string/filter_title_viewpoker">
-        <action android:name="android.intent.action.VIEW" />
-        <category android:name="android.intent.category.DEFAULT" />
-        <category android:name="android.intent.category.BROWSABLE" />
-
-        <data android:scheme="poker"
-              android:host="site1" />
-
-    </intent-filter>
-</activity>
+    
 
 </manifest>
