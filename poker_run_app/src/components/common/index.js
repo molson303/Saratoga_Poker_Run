@@ -9,3 +9,4 @@ export * from './CardSectionButton';
 export * from './CardSectionImage';
 export * from './ProfileCard';
 export * from './CardSectionLogOutButton';
+export * from './UserCardSection';
